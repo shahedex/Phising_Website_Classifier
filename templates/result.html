@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; font-size:50px; color:green;">Information for {{value['URL']}}</h1>
+<hr style="width:60%; border:1px solid green;">
+<br>
+<br>
+<table>
+  <tr>
+    <th>Length of url</th>
+    <th>Token count</th>
+    <th>ASNno</th>
+    <th>avg_domain_token_length</th>
+    <th>largest_domain</th>
+    <th>No_of_dots</th>
+    <th>host</th>
+  </tr>
+  <!-- this is good -->
+  <tr>
+    <td>{{value['Length_of_url']}}</td>
+    <td>{{value['token_count']}}</td>
+    <td>{{value['ASNno']}}</td>
+    <td>{{value['avg_domain_token_length']}}</td>
+    <td>{{value['largest_domain']}}</td>
+    <td>{{value['No_of_dots']}}</td>
+    <td>{{value['host']}}</td>
+  </tr>
+</table>
+<br>
+<table>
+        <tr>
+            <th>largest_token</th>
+            <th>avg_token_length</th>
+            <th>rank_country</th>
+            <th>domain_token_count</th>
+            <th>IPaddress_presence</th>
+            <th>rank_host</th>
+            <th>Length_of_host</th>
+            <th>underescape's</th>     
+        </tr>
+        <tr>
+          <td>{{value['largest_token']}}</td>
+          <td>{{value['avg_token_length']}}</td>
+          <td>{{value['rank_country']}}</td>
+          <td>{{value['domain_token_count']}}</td>
+          <td>{{value['IPaddress_presence']}}</td>
+          <td>{{value['rank_host']}}</td>
+          <td>{{value['Length_of_host']}}</td>
+          <td>{{value['src_underescape_cnt']}}</td>
+        </tr>
+</table>
+<br>
+<table>
+        <tr>
+            <th>safebrowsing</th>
+            <th>avg_path_token</th>
+            <th>src_link_cnt</th>
+            <th>search_box</th> 
+            <th>sec_sen_word_cnt</th>
+            <th>path_token_count</th>
+            <th>path</th>
+            <th>exe_cnt</th>     
+        </tr>
+        <tr>
+          <td>{{value['safebrowsing']}}</td>
+          <td>{{value['avg_path_token']}}</td>
+          <td>{{value['src_link_cnt']}}</td>
+          <td>{{value['src_search_cnt']}}</td>
+          <td>{{value['sec_sen_word_cnt']}}</td>
+          <td>{{value['path_token_count']}}</td>
+          <td>{{value['path']}}</td>
+          <td>{{value['src_exec_cnt']}}</td>
+        </tr>
+</table>
+<br>
+<table>
+        <tr>
+            <th>avg_domain_token_length</th>
+            <th>src_html_cnt</th>
+            <th>src_hlink_cnt</th>
+            <th>src_iframe_cnt</th>
+            <th>src_eval_cnt</th>
+            <th>src_escape_cnt</th>
+            <th>largest_path</th>
+            <th>URL</th>   
+        </tr>
+        <tr>
+          <td>{{value['avg_domain_token_length']}}</td>
+          <td>{{value['src_html_cnt']}}</td>
+          <td>{{value['src_hlink_cnt']}}</td>
+          <td>{{value['src_iframe_cnt']}}</td>
+          <td>{{value['src_eval_cnt']}}</td>
+          <td>{{value['src_escape_cnt']}}</td>
+          <td>{{value['largest_path']}}</td>
+          <td>{{value['URL']}}</td>
+        </tr>
+</table>
+</body>
+</html>
+
